@@ -1,0 +1,9 @@
+.image-wrapper {
+  height: 100vh;
+  background-color: #00b900;
+  text-align: center;
+}
+.image-wrapper img {
+  margin-top: 30vh;
+  height: 30%;
+}

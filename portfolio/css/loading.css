@@ -1,0 +1,6 @@
+.image-wrapper {
+  height: 100vh;
+  text-align: center; }
+  .image-wrapper img {
+    margin-top: 30vh;
+    height: 30%; }

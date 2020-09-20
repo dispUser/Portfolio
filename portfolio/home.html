@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIKE</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper-js css CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="first-column">
+        <div class="header-box left">
+          <i class="fas fa-signal"></i> X!Mobile <i class="fas fa-wifi"></i>
+        </div>
+        <div class="header-box">15:22</div>
+        <div class="header-box right">
+          <i class="fas fa-moon"></i> 66%
+          <i class="fas fa-battery-three-quarters"></i>
+        </div>
+      </div>
+      <div class="second-column">
+        <div class="header-box left">
+          <i class="fas fa-cog"></i>
+        </div>
+        <div class="header-box"><span class="title">Home</span></div>
+        <div class="header-box right">
+          <i class="fas fa-video"></i> <i class="fas fa-user-plus"></i>
+        </div>
+      </div>
+      <div class="third-column">
+        <input type="text" class="use_icon" placeholder="&#xf002; Search" />
+      </div>
+    </header>
+    <main class="main">
+      <section class="personal">
+        <div class="person-wrapper">
+          <div class="person-icon">
+            <div class="img-wrapper">
+              <img src="assets/LIKE_ICON.png" alt="" />
+            </div>
+          </div>
+          <div class="name-wrapper">Sample Name</div>
+          <div class="button-wrapper">
+            <span class="keep-icon">Keep</span>
+          </div>
+        </div>
+
+        <div class="group-wrapper">
+          <div class="box-wrapper">
+            <div class="icon-wrapper">
+              <i class="fas fa-user-friends"></i>
+            </div>
+            <div class="text-block">Groups 4</div>
+            <div class="text-block icon js-close-icon">
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="text-block icon js-open-icon disp-none">
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+          <div class="border"></div>
+        </div>
+
+        <div class="person-wrapper group-detail close">
+          <div class="person-icon">
+            <div class="img-wrapper small-icon">
+              <img src="assets/LIKE_ICON.png" alt="" />
+            </div>
+          </div>
+          <div class="name-wrapper">
+            <span class="small-text">Test Group (5)</span>
+          </div>
+        </div>
+
+        <div class="person-wrapper group-detail close">
+          <div class="person-icon">
+            <div class="img-wrapper small-icon">
+              <img src="assets/LIKE_ICON.png" alt="" />
+            </div>
+          </div>
+          <div class="name-wrapper">
+            <span class="small-text">Test Group (8)</span>
+          </div>
+        </div>
+
+        <div class="person-wrapper group-detail close">
+          <div class="person-icon">
+            <div class="img-wrapper small-icon">
+              <img src="assets/LIKE_ICON.png" alt="" />
+            </div>
+          </div>
+          <div class="name-wrapper">
+            <span class="small-text">Test Group (3)</span>
+          </div>
+        </div>
+
+        <div class="person-wrapper group-detail close">
+          <div class="person-icon">
+            <div class="img-wrapper small-icon">
+              <img src="assets/LIKE_ICON.png" alt="" />
+            </div>
+          </div>
+          <div class="name-wrapper">
+            <span class="small-text">Test Group (10)</span>
+          </div>
+        </div>
+
+        <div class="group-wrapper">
+          <div class="box-wrapper">
+            <div class="icon-wrapper">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="text-block">Friends 63</div>
+            <div class="text-block icon close-icon">
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="text-block icon open-icon disp-none">
+              <i class="fas fa-angle-down"></i>
+            </div>
+          </div>
+          <div class="border"></div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="header-wrapper">
+          <h2 class="item title">Services</h2>
+          <div class="item more">See all</div>
+        </div>
+
+        <div class="row">
+          <div class="item">
+            <i class="far fa-comments icon"></i>
+            <div class="text">OpenChat</div>
+          </div>
+          <div class="item">
+            <i class="far fa-smile icon"></i>
+            <div class="text">Stickers</div>
+          </div>
+          <div class="item">
+            <i class="fas fa-brush icon"></i>
+            <div class="text">Themes</div>
+          </div>
+          <div class="item">
+            <i class="fas fa-gamepad icon"></i>
+            <div class="text">LIKE GAME</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="item">
+            <i class="fas fa-plus"></i>
+            <div class="text">Add</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="themes">
+        <div class="header-wrapper">
+          <h2 class="item title">Themes for you</h2>
+          <div class="item more">See more</div>
+        </div>
+        <!-- スライダー全体を括るメインコンテナ -->
+        <div class="swiper-container">
+          <!-- 全スライドをまとめるラッパー -->
+          <div class="swiper-wrapper">
+            <!-- 各スライド -->
+            <div class="swiper-slide panel">Sample1</div>
+            <div class="swiper-slide panel">Sample2</div>
+            <div class="swiper-slide panel">Sample3</div>
+            <div class="swiper-slide panel">Sample4</div>
+            <div class="swiper-slide panel">Sample5</div>
+            <div class="swiper-slide panel">Sample6</div>
+            <div class="swiper-slide panel">Sample7</div>
+            <div class="swiper-slide panel">Sample8</div>
+            <div class="swiper-slide panel">Sample9</div>
+            <div class="swiper-slide panel">Sample10</div>
+            <div class="swiper-slide panel">Sample11</div>
+            <div class="swiper-slide panel">Sample12</div>
+            <div class="swiper-slide panel">Sample13</div>
+            <div class="swiper-slide panel">Sample14</div>
+            <div class="swiper-slide panel">Sample15</div>
+            <div class="swiper-slide panel">Sample16</div>
+            <div class="swiper-slide panel">Sample17</div>
+            <div class="swiper-slide panel">Sample18</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ad">
+        <div class="row">
+          <div class="wrapper">
+            <div class="item panel">Sample Ad</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav>
+        <ul>
+          <li>
+            <div class="wrapper active">
+              <div><i class="fas fa-home"></i></div>
+              <div class="footer-item-text">Home</div>
+            </div>
+          </li>
+          <li>
+            <div class="wrapper">
+              <div><i class="far fa-comment-dots"></i></div>
+              <div class="footer-item-text">Chats</div>
+            </div>
+          </li>
+          <li>
+            <div class="wrapper">
+              <div><i class="far fa-clock"></i></div>
+              <div class="footer-item-text">Time</div>
+            </div>
+          </li>
+          <li>
+            <div class="wrapper">
+              <div><i class="far fa-file-alt"></i></div>
+              <div class="footer-item-text">News</div>
+            </div>
+          </li>
+          <li>
+            <div class="wrapper">
+              <div><i class="fas fa-wallet"></i></div>
+              <div class="footer-item-text">Walet</div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <!-- Swiper-js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,351 @@
+/**
+ ヘッダー
+*/
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: rgb(24, 49, 83);
+  color: white;
+  z-index: 10;
+  font-size: 14px;
+  transition: 0.5s;
+
+  .title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .first-column {
+    overflow: hidden;
+    .header-box {
+      height: 30px;
+      line-height: 30px;
+      width: 33%;
+      box-sizing: border-box;
+      float: left;
+      text-align: center;
+    }
+    .left {
+      padding-left: 5px;
+      text-align: left;
+    }
+    .right {
+      text-align: right;
+    }
+  }
+
+  .second-column {
+    height: 40px;
+    .header-box {
+      height: 100%;
+      line-height: 40px;
+      width: 33%;
+      box-sizing: border-box;
+      float: left;
+      text-align: center;
+      .fas {
+        box-sizing: border-box;
+        font-size: 18px;
+        padding-left: 10px;
+      }
+    }
+    .left {
+      text-align: left;
+    }
+    .right {
+      text-align: right;
+    }
+  }
+
+  .third-column {
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(24, 49, 83);
+    text-align: center;
+    box-sizing: border-box;
+    input {
+      box-sizing: border-box;
+      padding: 10px;
+      background-color: rgb(44, 69, 103);
+      width: 98%;
+      height: 75%;
+      border: none;
+      border-radius: 10px;
+      color: rgb(104, 122, 146);
+    }
+    .use_icon {
+      display: inline-block;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size: 14px;
+    }
+  }
+}
+
+.hide {
+  height: 70px;
+}
+
+/**
+ メイン
+*/
+.main {
+  // 固定ヘッダ、フッター分
+  margin-top: 120px;
+  margin-bottom: 60px;
+  .person-wrapper {
+    height: 140px;
+    overflow: hidden;
+    transition: all 0.5s;
+    .person-icon {
+      position: relative;
+      width: 25%;
+      height: 100%;
+      float: left;
+      .img-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        background-color: rgb(0, 185, 0);
+        width: 100px;
+        height: 100px;
+        border-radius: 120px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .small-icon {
+        width: 72px;
+        height: 72px;
+      }
+    }
+    .name-wrapper {
+      width: 50%;
+      height: 100%;
+      float: left;
+      line-height: 140px;
+      font-size: 26px;
+      padding-left: 25px;
+      font-weight: bold;
+      .small-text {
+        font-size: 18px;
+      }
+    }
+    .button-wrapper {
+      float: left;
+      width: 25%;
+      height: 100%;
+      text-align: center;
+      position: relative;
+      .keep-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 0 10px;
+        transform: translate(-50%, -50%);
+        padding: 5px 15px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 25px;
+      }
+    }
+  }
+
+  .gropu-detail {
+    height: 100px;
+    .name-wrapper {
+      line-height: 100px;
+    }
+  }
+
+  .close {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    transition: all 0.7s;
+  }
+
+  .disp-none {
+    display: none;
+  }
+
+  .group-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    height: 48px;
+    .box-wrapper {
+      overflow: hidden;
+      height: 100%;
+    }
+    .icon-wrapper {
+      height: 100%;
+      font-size: 28px;
+      line-height: 48px;
+      width: 20%;
+      float: left;
+      text-align: center;
+    }
+    .text-block {
+      width: 60%;
+      float: left;
+      font-size: 20px;
+      height: 100%;
+      line-height: 48px;
+    }
+    .icon {
+      width: 20%;
+    }
+    .border {
+      border-bottom: 1px solid rgb(228, 228, 228);
+      width: 83%;
+      margin: 0 auto;
+    }
+  }
+
+  /**
+  共通セクションヘッダー
+  */
+  .header-wrapper {
+    overflow: hidden;
+    height: 70px;
+    .item {
+      height: 100%;
+      font-size: 24px;
+      float: left;
+      line-height: 70px;
+    }
+    .title {
+      margin: 0;
+      padding: 0;
+      padding-left: 10%;
+      width: 80%;
+    }
+    .more {
+      width: 20%;
+      color: gray;
+    }
+  }
+
+  /**
+  サービスセクション
+  */
+  .services {
+    .row {
+      margin: 0 auto;
+      width: 95%;
+      overflow: hidden;
+      margin-bottom: 16px;
+      .item {
+        width: 25%;
+        float: left;
+        text-align: center;
+        .icon {
+          font-size: 36px;
+        }
+        .text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+/*
+共通パネルスタイル
+*/
+.panel {
+  background-color: rgb(233, 233, 233);
+  border: 1px solid rgb(204, 204, 204);
+  font-weight: bold;
+  color: gray;
+}
+
+.themes {
+  // スライドのコンテナのスタイル
+  .swiper-container {
+    width: 85%;
+    height: 400px;
+    padding: 10px;
+  }
+
+  // スライドのスタイル
+  .swiper-slide {
+    border-radius: 50px;
+    line-height: 400px;
+    text-align: center;
+    /* each item size is decided by the number of panels shown */
+    /* width: 500px; */
+  }
+}
+
+.ad {
+  overflow: hidden;
+  .row {
+    margin: 0 auto;
+    width: 85%;
+    .wrapper {
+      width: 100%;
+      float: left;
+      text-align: center;
+      height: 250px;
+      padding: 1%;
+      .item {
+        height: 100%;
+        border-radius: 30px;
+        line-height: 250px;
+      }
+    }
+  }
+}
+
+/**
+ フッター
+*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1000;
+  background-color: #fff;
+  nav {
+    width: 100%;
+    height: 100%;
+    ul {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      list-style: none;
+      li {
+        width: 20%;
+        height: 100%;
+        float: left;
+        border-top: 1px solid rgb(221, 221, 221);
+        text-align: center;
+        color: gray;
+        .wrapper {
+          margin-top: 10px;
+          height: 50px;
+          font-size: 20px;
+        }
+        .active {
+          color: rgb(24, 49, 83);
+        }
+        .footer-item-text {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
